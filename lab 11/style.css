@@ -1,0 +1,55 @@
+/* <!-- Syed Kashan Shah
+26i 3027
+BS SE A --> */
+
+body{
+    background-color: rgb(19, 55, 92);
+    color: white;
+}
+*{
+    text-align: center;
+}
+table{
+    text-align: center;
+    margin: 0 auto;
+}
+tr{
+    text-align: center;
+}
+th{
+    display: block;
+}
+
+#from{
+    color: grey;
+    padding-top: 5px;
+}
+h1{
+    color: rgb(221, 99, 99);
+}
+.theading{
+    font-weight: bold;
+    font-size: 20px;
+    color: yellow;
+}
+
+td{
+    font-size: 18px;
+}
+
+
+footer{
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+button{
+    outline: none;
+    background-color: red;
+    color: cyan;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;;
+}
