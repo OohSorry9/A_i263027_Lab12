@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-Sessional VIP Party Invitation | Syed Kashan Shah</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Syne:wght@700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Canvas -->
+    <canvas id="particle-canvas"></canvas>
+    
+    <!-- Audio Ambient Synthesizer Controls -->
+    <button id="audio-toggle" class="audio-btn" title="Toggle Ambient Audio">
+        <i class="fa-solid fa-volume-xmark" id="audio-icon"></i>
+        <span class="sound-bars">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </span>
+    </button>
+
+    <!-- Main Container -->
+    <div class="app-container">
+        
+        <!-- HEADER / NAVIGATION -->
+        <header class="header">
+            <div class="brand">
+                <span class="badge">BS SE A • 26i-3027</span>
+                <div class="host-info">
+                    <span class="host-label">Hosted by</span>
+                    <h4 class="host-name">Syed Kashan Shah</h4>
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a href="#invite" class="nav-item active"><i class="fa-solid fa-envelope-open"></i> Invite</a>
+                <a href="#details" class="nav-item"><i class="fa-solid fa-calendar-star"></i> Event Intel</a>
+                <a href="#rsvp" class="nav-item"><i class="fa-solid fa-ticket"></i> Claim Pass</a>
+            </nav>
+        </header>
+
+        <!-- PAGE 1: THE INVITATION LANDING HERO -->
+        <section id="invite" class="page-section active">
+            <div class="hero-card glass-panel">
+                <div class="hero-header">
+                    <span class="status-tag pulse-tag">
+                        <span class="pulse-dot"></span> EXAMS OFFICIALLY CONQUERED
+                    </span>
+                    <h1 class="glitch-title" data-text="AFTER-SESSIONAL">AFTER-SESSIONAL</h1>
+                    <div class="sub-headline">THE ULTIMATE RECOVERY BASH</div>
+                </div>
+
+                <div class="hero-body">
+                    <p class="hero-description">
+                        We made it through the storm! After endless nights of exam madness, code debugging, and caffeine overload, it's time to hit reset. You are officially invited to unplug, recharge, and celebrate with the squad.
+                    </p>
+
+                    <div class="quick-highlights">
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-calendar-day"></i>
+                            <span>NOV 04, 2026</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <span>AFTERNOON VIBES</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>CENTAURUS MALL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#rsvp" class="btn btn-primary glow-effect">
+                        <i class="fa-solid fa-bolt"></i> CLAIM YOUR VIP PASS
+                    </a>
+                    <a href="#details" class="btn btn-secondary">
+                        <i class="fa-solid fa-circle-info"></i> EXPLORE EVENT DETAILS
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 2: PARTY DETAILS & COUNTDOWN -->
+        <section id="details" class="page-section">
+            <div class="section-header center">
+                <span class="section-tag">CLASSIFIED EVENT INTEL</span>
+                <h2 class="section-title">THE GAME PLAN</h2>
+            </div>
+
+            <!-- COUNTDOWN TIMER CONTAINER -->
+            <div class="countdown-container glass-panel">
+                <h3 class="countdown-heading"><i class="fa-regular fa-hourglass-half"></i> COUNTDOWN TO IGNITION</h3>
+                <div class="countdown-grid" id="countdown">
+                    <div class="time-box">
+                        <span class="time-value" id="days">00</span>
+                        <span class="time-label">DAYS</span>
+                    </div>
+                    <div class="time-box">
+                        <span class="time-value" id="hours">00</span>
+                        <span class="time-label">HOURS</span>
+                    </div>
+                    <div class="time-box">
+                        <span class="time-value" id="minutes">00</span>
+                        <span class="time-label">MINUTES</span>
+                    </div>
+                    <div class="time-box">
+                        <span class="time-value" id="seconds">00</span>
+                        <span class="time-label">SECONDS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DETAILS GRID -->
+            <div class="details-grid">
+                <!-- Schedule & Specs Card -->
+                <div class="info-card glass-panel">
+                    <div class="card-icon"><i class="fa-solid fa-sliders"></i></div>
+                    <h3>EVENT SPECIFICATIONS</h3>
+                    <ul class="spec-list">
+                        <li>
+                            <i class="fa-regular fa-calendar"></i>
+                            <div>
+                                <strong>Date & Day</strong>
+                                <p>Wednesday, 4th November 2026</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-clock"></i>
+                            <div>
+                                <strong>Time</strong>
+                                <p>Afternoon (Session starts 2:00 PM PST)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-map-pin"></i>
+                            <div>
+                                <strong>Venue</strong>
+                                <p>Centaurus Mall, Islamabad</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-shirt"></i>
+                            <div>
+                                <strong>Dress Code</strong>
+                                <p>Smart Casual / Party Vibes Only</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Location & Map Visual Card -->
+                <div class="info-card glass-panel map-card">
+                    <div class="card-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                    <h3>VENUE RADAR</h3>
+                    <div class="map-placeholder">
+                        <div class="radar-sweep"></div>
+                        <div class="map-pin-pulse">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="venue-badge">
+                            <strong>Centaurus Mall</strong>
+                            <span>Islamabad, PK</span>
+                        </div>
+                    </div>
+                    <a href="https://maps.google.com/?q=Centaurus+Mall+Islamabad" target="_blank" class="btn btn-outline full-width">
+                        <i class="fa-solid fa-up-right-from-square"></i> OPEN IN GOOGLE MAPS
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 3: RSVP & DIGITAL VIP PASS GENERATOR -->
+        <section id="rsvp" class="page-section">
+            <div class="section-header center">
+                <span class="section-tag">CONFIRM YOUR ENTRY</span>
+                <h2 class="section-title">CLAIM YOUR ACCESS PASS</h2>
+            </div>
+
+            <div class="rsvp-wrapper glass-panel">
+                <form id="rsvp-form" class="rsvp-form">
+                    <div class="form-group">
+                        <label for="guest-name"><i class="fa-solid fa-user"></i> Full Name</label>
+                        <input type="text" id="guest-name" placeholder="Enter your full name..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-circle-question"></i> Will You Be Attending?</label>
+                        <div class="attendance-selector">
+                            <label class="radio-card active">
+                                <input type="radio" name="attendance" value="YES" checked>
+                                <span class="radio-custom"><i class="fa-solid fa-fire"></i> HELL YES!</span>
+                            </label>
+                            <label class="radio-card">
+                                <input type="radio" name="attendance" value="MAYBE">
+                                <span class="radio-custom"><i class="fa-solid fa-face-thinking"></i> MAYBE</span>
+                            </label>
+                            <label class="radio-card">
+                                <input type="radio" name="attendance" value="NO">
+                                <span class="radio-custom"><i class="fa-solid fa-face-frown"></i> CAN'T MAKE IT</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guest-note"><i class="fa-solid fa-comment-dots"></i> Message for Kashan (Optional)</label>
+                        <textarea id="guest-note" placeholder="Drop a song request or party message..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block glow-effect">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> GENERATE VIP TICKET
+                    </button>
+                </form>
+
+                <!-- DYNAMIC VIP TICKET DISPLAY (TRIGGERED AFTER SUBMISSION) -->
+                <div id="ticket-result" class="ticket-result hidden">
+                    <div class="ticket-card glass-panel shimmer">
+                        <div class="ticket-header">
+                            <span class="pass-type"><i class="fa-solid fa-crown"></i> VIP GUEST PASS</span>
+                            <span class="ticket-id" id="ticket-code">POST-2026-8849</span>
+                        </div>
+                        <div class="ticket-body">
+                            <div class="attendee-details">
+                                <span class="label">PASS HOLDER</span>
+                                <h3 id="pass-name">GUEST NAME</h3>
+                            </div>
+                            <div class="ticket-row">
+                                <div>
+                                    <span class="label">EVENT</span>
+                                    <strong>After-Sessional</strong>
+                                </div>
+                                <div>
+                                    <span class="label">DATE</span>
+                                    <strong>NOV 04, 2026</strong>
+                                </div>
+                                <div>
+                                    <span class="label">STATUS</span>
+                                    <strong class="status-confirmed" id="pass-status">CONFIRMED</strong>
+                                </div>
+                            </div>
+                            <div class="barcode-wrapper">
+                                <div class="barcode"></div>
+                                <span class="barcode-num">26i3027-PARTY-VIP</span>
+                            </div>
+                        </div>
+                        <div class="ticket-footer">
+                            <button class="btn btn-secondary btn-sm" onclick="window.print()">
+                                <i class="fa-solid fa-print"></i> PRINT / SAVE PASS
+                            </button>
+                            <button class="btn btn-outline btn-sm" id="reset-rsvp-btn">
+                                <i class="fa-solid fa-rotate-left"></i> EDIT RSVP
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="host-contact">Organized with <i class="fa-solid fa-heart pulse"></i> by <strong>Syed Kashan Shah</strong></p>
+                <p class="contact-num"><i class="fa-solid fa-phone"></i> Contact: <a href="tel:+92377509064">+92 377509064</a></p>
+                <span class="copyright">© 2026 BS SE A • All Rights Reserved. See you at Centaurus!</span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Canvas Confetti Engine (Lightweight JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
